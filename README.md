@@ -1,6 +1,12 @@
 # Panduan Penggunaan
 
 Ini adalah aplikasi backend test JogjaCamp.
+Ini adalah requirement untuk menjalankan aplikasi:
+
+- [PHP](https://www.php.net/) (versi 7.4.33 atau lebih tinggi)
+- [Composer](https://getcomposer.org/)
+- [Laravel](https://laravel.com/) (versi 8)
+- [Database](https://www.mysql.com/) (MySQL, PostgreSQL, dll.)
 
 ## Instalasi
 
@@ -32,7 +38,7 @@ Ini adalah aplikasi backend test JogjaCamp.
     php artisan migrate:fresh
     ```
 
-9. (Opsional) Jalankan seeder untuk mengisi data awal ke dalam basis data:
+9. Jalankan seeder untuk mengisi data awal ke dalam basis data:
 
     ```bash
     php artisan db:seed
@@ -41,7 +47,10 @@ Ini adalah aplikasi backend test JogjaCamp.
     ```bash
     php artisan l5-swagger:generate
     ```
-    kemudian akses ke http://127.0.0.1:8000/api/documentation
+    kemudian akses ke 
+    ```bash
+    http://127.0.0.1:8000/api/documentation
+    ```
 11. Untuk menjalankan unit test anda dapat melakukan perintah berikut:
     ```bash
     php artisan test
@@ -56,5 +65,11 @@ Ini adalah aplikasi backend test JogjaCamp.
     ```bash
     php artisan serve
     ```
-    Kemudian anda bisa akses ke http://127.0.0.1:8000/ untuk CRUD
-    Dan http://127.0.0.1:8000/api/category untuk CRUD Via API
+    Kemudian untuk CRUD anda bisa akses 
+    ```bash
+    http://127.0.0.1:8000/
+    ``` 
+    Dan untuk CRUD Via API
+    ```bash
+    http://127.0.0.1:8000/api/category
+    ``` 
