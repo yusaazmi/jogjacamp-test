@@ -72,4 +72,8 @@ Ini adalah requirement untuk menjalankan aplikasi:
     Dan untuk CRUD Via API
     ```bash
     http://127.0.0.1:8000/api/category
-    ``` 
+    ```
+15. Untuk memproses antrian jalankan perintah :
+    ```bash
+    php artisan queue:work
+    ```
